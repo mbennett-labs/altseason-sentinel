@@ -1,0 +1,41 @@
+# Altseason Sentinel Configuration Example
+# =========================================
+# Copy this to config.yaml and fill in your values
+
+# Update frequency (in seconds)
+update_interval_seconds: 300  # 5 minutes
+
+# Discord notifications
+discord:
+  enabled: true
+  webhook_url: "YOUR_DISCORD_WEBHOOK_URL"  # Get from Discord Server Settings > Integrations > Webhooks
+
+# Email notifications (for critical alerts only)
+email:
+  enabled: false
+  smtp_server: "smtp.gmail.com"
+  smtp_port: 587
+  from_email: "your.email@gmail.com"
+  to_email: "your.email@gmail.com"
+  password: "your_app_password"
+
+# Data logging
+logging:
+  enabled: true
+  file: "altseason_data.csv"
+
+# Alert preferences
+alerts:
+  duplicate_threshold_minutes: 30
+  discord_levels:
+    - CRITICAL
+    - BULLISH
+    - WARNING
+    - OPPORTUNITY
+  email_levels:
+    - CRITICAL
+
+# API settings
+api:
+  coingecko_delay_seconds: 1
+  max_retries: 3
