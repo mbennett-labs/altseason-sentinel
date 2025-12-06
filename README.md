@@ -108,7 +108,7 @@ Last Update: 2025-11-10 15:09:06
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/altseason-sentinel.git
+git clone https://github.com/mbennett-labs/altseason-sentinel.git
 cd altseason-sentinel
 
 # Run automated setup
@@ -116,12 +116,13 @@ python quick_start.py
 
 # Or manual installation
 pip install -r requirements.txt
+cp config.yaml.example config.yaml
 python altseason_sentinel.py
 ```
 
 ## ⚙️ Configuration
 
-Edit `config.yaml` to customize:
+Copy `config.yaml.example` to `config.yaml` and customize:
 
 ```yaml
 # Update frequency (seconds)
@@ -211,19 +212,8 @@ Contributions welcome! Please open an issue or submit a pull request.
 
 ## 📧 Contact
 
-Built by Mike B. - [GitHub Profile](https://github.com/YOUR_USERNAME)
+Built by Mike B. - QuantumShieldLabs LLC
 
 ---
 
-## 📸 Screenshots
-
-### Terminal Dashboard
-![Dashboard](screenshots/dashboard.png)
-
-### Discord Notifications
-![Discord Alerts](screenshots/discord.png)
-
----
-
-**Note**: This tool is for informational purposes only. Not financial advice. Always do your own research before trading.# altseason-sentinel
-Real-time crypto market intelligence dashboard monitoring BTC dominance, altseason signals, and old coin revivals.
+**Note**: This tool is for informational purposes only. Not financial advice. Always do your own research before trading.
